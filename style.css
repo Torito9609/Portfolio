@@ -69,13 +69,53 @@ body {
   border: 3px solid var(--white);
 }
 
-.skill {
-  font-size: 15px;
+.skill h3 {
+  font-size: 35px;
   color: var(--orange-web);
+  font-weight: bold;
+}
+
+.hero-content .pt-5 {
+  padding: 0;
+  align-items: center;
+}
+
+.skill .row {
+  align-content: left;
+}
+
+.skill .row .col-1 {
+  padding: 0px 50px 0px 30px;
 }
 
 .skill-img img {
-  width: 40px;
+  width: 60px;
 }
 
 /*-----Hero-----*/
+
+/*----- Aboutme -----*/
+
+.about .container .col-md-4 h4 {
+  font-size: 40px;
+  color: var(--red-munsell);
+  font-weight: bold;
+}
+
+.about .container .col-md-8 p {
+  color: var(--electric-blue);
+  font-size: 20px;
+}
+
+.about .container .col-md-8 .row p {
+  color: var(--orange-web);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.about .container .col-md-8 .row h2 {
+  color: var(--red-munsell);
+  font-size: 35px;
+  font-weight: bold;
+}
+/*----- Aboutme -----*/
