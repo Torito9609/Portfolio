@@ -10,6 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -45,26 +49,23 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#hero"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#about"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Portfolio</a
+                <a class="nav-link active" aria-current="page" href="#project"
+                  >Projects</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#contact"
                   >Contact</a
                 >
               </li>
@@ -75,11 +76,11 @@
     </nav>
     <!--------- Header --------->
     <!--------- Hero ----------->
-    <div class="container my-5">
+    <div class="container my-5" id="hero">
       <div class="row">
         <div class="col-md-6 m-auto">
           <div class="hero-content">
-            <h5>Welcome to my world</h5>
+            <h5>Welcome!</h5>
             <h1>Hi! I'm <b>Andrés Toro</b> a: <span class="typed"></span></h1>
             <p>
               Passionate about technology and problem-solving, I focus on
@@ -103,7 +104,7 @@
                 </div>
                 <div class="col-1">
                   <div class="skill-img">
-                    <img src="/icons/js.png" alt="" />
+                    <img src="/icons/springboot.png" alt="" />
                   </div>
                 </div>
                 <div class="col-1">
@@ -124,47 +125,204 @@
     </div>
     <!--------- Hero ----------->
     <!--------- About ----------->
-    <section class="about my-5">
+    <section class="about my-5" id="about">
       <div class="container">
         <div class="col-md-4">
           <h4>About me</h4>
         </div>
         <div class="col-md-8">
           <p>
-            When I'm not coding, you’ll likely find me at the gym, swimming, or
-            exploring my love for music. Whether it's playing guitar, singing,
-            or attending electronic music festivals, I enjoy staying connected
-            to creativity and rhythm. I also make it a priority to spend quality
-            time with my partner and family—they're a big part of my motivation.
+            When I'm not coding, I enjoy staying active at the gym, swimming,
+            and exploring my love for music—whether it's playing guitar,
+            singing, or attending electronic music festivals. I also value
+            spending quality time with my partner and family, who motivate me.
           </p>
           <p>
-            On the technical side, I’ve honed my backend development skills,
-            working with Java, Spring Boot, Python, and Django, along with
-            JavaScript and web development. I approach each project with a
-            problem-solving mindset, ensuring my code is efficient and
-            well-structured for real-world applications. With a strong
-            foundation in software design, I’m always eager to take on new
-            challenges, refine my craft, and build impactful tech solutions.
+            Technically, I focus on backend development, working with Java,
+            Spring Boot, Python and MySQL data bases. I approach projects with a
+            problem-solving mindset, ensuring efficient, well-structured code
+            for real-world applications, while always eager to tackle new
+            challenges and build impactful solutions.
           </p>
           <div class="row">
             <div class="col-md-4">
               <div class="count">
-                <h2>2+</h2>
-                <p>Years of experience</p>
+                <h2>1.5+</h2>
+                <p>Years of development experience</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="count">
-                <h2>50%</h2>
-                <p>Carreer completed</p>
+                <h2>38%</h2>
+                <p>Bachelor's degree completed</p>
               </div>
             </div>
+            <div class="col-md-4">
+              <div class="count">
+                <h2>3+</h2>
+                <p>Years of leadership</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!--------- About ----------->
+    <!--------- Projects Section --------->
+    <section class="projects my-5" id="project">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h4>Projects</h4>
+          </div>
+          <div class="col-12">
+            <div class="project-card mb-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Project 1: E-commerce Website</h5>
+                  <p>
+                    A fully functional e-commerce platform where users can
+                    browse, add products to the cart, and make purchases.
+                    Focused on backend optimization for fast product search and
+                    secure checkout.
+                  </p>
+                  <h6>Technologies Used:</h6>
+                  <ul>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>JPA</li>
+                    <li>Hibernate</li>
+                    <li>JWT</li>
+                    <li>MySQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                  <a
+                    href="https://github.com/Torito9609/Proyecto_Final_G3.git"
+                    class="btn mt-3"
+                    target="_blank"
+                    >See Front End</a
+                  >
+                  <a
+                    href="https://github.com/Torito9609/back-end-zafiroAzul.git"
+                    class="btn mt-3"
+                    target="_blank"
+                    >See Back End</a
+                  >
+
+                  <!-- Additional details section below the buttons -->
+                  <div class="additional-details mt-4">
+                    <h6>Additional Details:</h6>
+                    <p>
+                      The e-commerce website uses Spring Boot for the backend,
+                      which allows for fast development and dependency
+                      injection. I used Hibernate and JPA for ORM, allowing
+                      seamless interaction with the MySQL database. JWT is used
+                      for secure user authentication. The front-end is built
+                      using HTML, CSS, and JavaScript, ensuring a responsive and
+                      user-friendly interface.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="project-ss mb-3">
+                    <img src="img/SS1.png" alt="E-commerce Screenshot" />
+                  </div>
+                  <div class="project-ss mb-3">
+                    <img src="img/SS2.png" alt="E-commerce Screenshot" />
+                  </div>
+                  <div class="project-ss mb-3">
+                    <img src="img/SS5.png" alt="E-commerce Screenshot" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------- Projects Section --------->
+    <!-- Social Media Section -->
+    <div class="social-media">
+      <a
+        href="https://www.linkedin.com/in/kevin-andres-toro-moreno-developer/"
+        target="_blank"
+        class="social-icon"
+      >
+        <i class="bx bxl-linkedin"></i>
+      </a>
+      <a
+        href="https://github.com/Torito9609"
+        target="_blank"
+        class="social-icon"
+      >
+        <i class="bx bxl-github"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/andres_torom/"
+        target="_blank"
+        class="social-icon"
+      >
+        <i class="bx bxl-instagram"></i>
+      </a>
+    </div>
+    <!-- Social Media Section -->
+    <!--------- Contact ----------->
+    <section class="contact my-5" id="contact">
+      <div class="container">
+        <div class="col-md-4">
+          <h4>Contact Me</h4>
+        </div>
+        <div class="col-md-8">
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/mvgzeoqq"
+            method="POST"
+          >
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="your-email@example.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Write your message here"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+          <div id="successMessage" class="success-message">
+            Your message has been sent successfully!
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------- Contact ----------->
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -173,7 +331,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed(".typed", {
-        strings: ["Fullstack Developer", "Professional Coder", "Life Lover"],
+        strings: ["Developer", "Professional Coder", "Life Lover"],
         typeSpeed: 90,
         backSpeed: 70,
         loop: true,
