@@ -81,9 +81,15 @@ body {
   font-size: 20px;
 }
 
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
 .hero-img img {
-  width: 500px;
-  height: 600px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   border: 3px solid var(--white);
@@ -209,12 +215,6 @@ a.btn:hover {
   background-color: var(--orange-web);
   color: var(--white);
 }
-
-@media (min-width: 768px) {
-  .projects .container .row > .col-12 {
-    margin-bottom: 30px;
-  }
-}
 /*----- Projects -----*/
 
 /*----- Contact -----*/
@@ -233,8 +233,8 @@ a.btn:hover {
 #name::placeholder,
 #email::placeholder,
 #message::placeholder {
-  color: #888; /* Adjust the color to your preference */
-  opacity: 1; /* Ensures the color is fully visible */
+  color: #888;
+  opacity: 1;
 }
 
 .contact .form-label {
@@ -253,26 +253,25 @@ a.btn:hover {
 
 .success-message {
   display: none;
-  color: var(--orange-web);
+  color: rgb(17, 244, 70);
   font-size: 16px;
   margin-top: 10px;
 }
 
-/* Autofill adjustments */
 input:-webkit-autofill,
 textarea:-webkit-autofill {
   background-color: var(--eerie-black) !important;
   color: var(--electric-blue) !important;
   border: 2px solid var(--white) !important;
-  -webkit-box-shadow: 0 0 0px 1000px var(--eerie-black) inset; /* Fix background color */
+  -webkit-box-shadow: 0 0 0px 1000px var(--eerie-black) inset;
   box-shadow: 0 0 0px 1000px var(--eerie-black) inset;
-  transition: background-color 5000s ease-in-out 0s; /* Prevent flashing */
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 input:-webkit-autofill::first-line,
 textarea:-webkit-autofill::first-line {
-  font-family: inherit; /* Keep the font consistent */
-  font-size: inherit; /* Inherit size */
+  font-family: inherit;
+  font-size: inherit;
   color: var(--electric-blue) !important;
 }
 
@@ -290,18 +289,29 @@ textarea:-webkit-autofill::first-line {
 /* Social Media Icons */
 .social-media {
   display: flex;
-  gap: 20px; /* Spacing between icons */
-  justify-content: center; /* Center the icons */
+  gap: 20px;
+  justify-content: center;
   margin-top: 30px;
 }
 
 .social-icon {
   font-size: 40px;
-  color: var(--white); /* Icon color */
+  color: var(--white);
   transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-  color: var(--red-munsell); /* Icon color on hover */
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  color: var(--red-munsell);
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .projects .container .row > .col-12 {
+    margin-bottom: 30px;
+  }
+  .hero-img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
 }
