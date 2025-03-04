@@ -174,14 +174,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("changeLangEn")
     .addEventListener("click", function () {
       changeLanguage("en");
-      console.log("Cambiando a ingles");
     });
 
   document
     .getElementById("changeLangEs")
     .addEventListener("click", function () {
       changeLanguage("es");
-      console.log("Cambiando a español");
     });
 
   //changeLanguage(defaultLanguage);
