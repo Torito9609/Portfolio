@@ -210,19 +210,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let defaultLanguage = "es";
 
-  document
-    .getElementById("changeLangEn")
-    .addEventListener("click", function () {
-      defaultLanguage = "en";
-      changeLanguage(defaultLanguage);
-    });
+  const btnEs = document.getElementById("changeLangEs");
+  const btnEn = document.getElementById("changeLangEn");
 
-  document
-    .getElementById("changeLangEs")
-    .addEventListener("click", function () {
-      defaultLanguage = "es";
-      changeLanguage(defaultLanguage);
-    });
+  btnEn.addEventListener("click", function () {
+    defaultLanguage = "en";
+    btnEn.classList.add("active");
+    btnEs.classList.remove("active");
+    changeLanguage(defaultLanguage);
+  });
+
+  btnEs.addEventListener("click", function () {
+    btnEs.classList.add("active");
+    btnEn.classList.remove("active");
+    defaultLanguage = "es";
+    changeLanguage(defaultLanguage);
+  });
 
   changeLanguage(defaultLanguage);
 });

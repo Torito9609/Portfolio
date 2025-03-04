@@ -69,11 +69,18 @@ body {
   border-radius: 5px;
   border: var(--red-munsell);
   font-weight: 500;
+  margin-left: 10px;
 }
 
 .btn-:hover {
   color: var(--white);
   background-color: var(--red-munsell);
+}
+
+.btn-.active {
+  color: var(--white);
+  background-color: var(--red-munsell);
+  border: 2px solid var(--white);
 }
 .offcanvas {
   background-color: var(--eerie-black) !important;
