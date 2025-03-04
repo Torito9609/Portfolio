@@ -44,7 +44,13 @@
       "emailPlaceHolder": "your-email@example.com",
       "messageField": "Message",
       "messagePlaceHolder": "Type your message here",
-      "sendBtn": "Send"
+      "sendBtn": "Send",
+      "success": "Succes! Your form was submited."
+    },
+    "validation": {
+      "name": "Name can only contain letters.",
+      "email": "Please enter a valid email address.",
+      "message": "Message must be at least 20 characters."
     }
   },
   "es": {
@@ -92,7 +98,13 @@
       "emailPlaceHolder": "tu-correo@ejemplo.com",
       "messageField": "Mensaje",
       "messagePlaceHolder": "Escribe tu mensaje aquí",
-      "sendBtn": "Enviar"
+      "sendBtn": "Enviar",
+      "success": "¡Tu mensaje se envió exitosamente!"
+    },
+    "validation": {
+      "name": "Tu nombre solo puede contener letras y espacios.",
+      "email": "Por favor ingresa una dirección de correo válida.",
+      "message": "Tu mensaje debe contener al menos 20 caracteres.."
     }
   }
 }

@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function validateName() {
     const name = nameInput.value.trim();
     if (!/^[A-Za-z\s]+$/.test(name)) {
-      showError(nameInput, "Name can only contain letters.");
+      showError(nameInput, "validation.name");
       return false;
     } else {
       clearError(nameInput);
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function validateEmail() {
     const email = emailInput.value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      showError(emailInput, "Please enter a valid email address.");
+      showError(emailInput, "validation.email");
       return false;
     } else {
       clearError(emailInput);
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function validateMessage() {
     const message = messageInput.value.trim();
     if (message.length < 20) {
-      showError(messageInput, "Message must be at least 20 characters.");
+      showError(messageInput, "validation.message");
       return false;
     } else {
       clearError(messageInput);
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return isNameValid && isEmailValid && isMessageValid;
   }
 
-  function showError(input, message) {
+  function showError(input, translationKey) {
     let errorDiv = input.nextElementSibling;
     if (!errorDiv || !errorDiv.classList.contains("validation-error")) {
       errorDiv = document.createElement("div");
@@ -105,7 +105,46 @@ document.addEventListener("DOMContentLoaded", () => {
       errorDiv.style.marginTop = "5px";
       input.parentNode.appendChild(errorDiv);
     }
-    errorDiv.textContent = message;
+
+    errorDiv.setAttribute("data-translation-key", translationKey);
+
+    getTranslation(translationKey, (message) => {
+      errorDiv.textContent = message;
+    });
+  }
+
+  function updateValidationErrors() {
+    const errorDivs = document.querySelectorAll(".validation-error");
+
+    errorDivs.forEach((errorDiv) => {
+      const translationKey = errorDiv.getAttribute("data-translation-key");
+
+      if (translationKey) {
+        getTranslation(translationKey, (message) => {
+          errorDiv.textContent = message;
+        });
+      }
+    });
+  }
+
+  function getTranslation(key, callback) {
+    const lang = defaultLanguage || "es";
+    loadTranslations((translations) => {
+      const keys = key.split(".");
+      let translation = translations[lang];
+
+      keys.forEach((k) => {
+        if (translation && translation[k]) {
+          translation = translation[k];
+        }
+      });
+
+      if (translation) {
+        callback(translation);
+      } else {
+        callback("Translation not found");
+      }
+    });
   }
 
   function clearError(input) {
@@ -165,22 +204,25 @@ document.addEventListener("DOMContentLoaded", () => {
           element.setAttribute("placeholder", translation);
         }
       });
+      updateValidationErrors();
     });
   }
 
-  //const defaultLanguage = "es";
+  let defaultLanguage = "es";
 
   document
     .getElementById("changeLangEn")
     .addEventListener("click", function () {
-      changeLanguage("en");
+      defaultLanguage = "en";
+      changeLanguage(defaultLanguage);
     });
 
   document
     .getElementById("changeLangEs")
     .addEventListener("click", function () {
-      changeLanguage("es");
+      defaultLanguage = "es";
+      changeLanguage(defaultLanguage);
     });
 
-  //changeLanguage(defaultLanguage);
+  changeLanguage(defaultLanguage);
 });
