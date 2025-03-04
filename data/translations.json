@@ -67,8 +67,8 @@
       "exp": "Años de experiencia en desarrollo.",
       "bachelor": "Pregrado completado.",
       "leadership": "Años de experiencia en roles de liderazgo.",
-      "langLevel": "Nativo",
-      "langDescription": "Nivel de español."
+      "langLevel": "C1",
+      "langDescription": "Nivel de inglés."
     },
     "projects": {
       "projectsTitle": "Proyectos",
@@ -90,7 +90,7 @@
       "namePlaceHolder": "Tu nombre",
       "emailField": "Correo electrónico",
       "emailPlaceHolder": "tu-correo@ejemplo.com",
-      "messageFielda": "Mensaje",
+      "messageField": "Mensaje",
       "messagePlaceHolder": "Escribe tu mensaje aquí",
       "sendBtn": "Enviar"
     }
