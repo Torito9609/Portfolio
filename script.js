@@ -118,4 +118,71 @@ document.addEventListener("DOMContentLoaded", () => {
   function clearValidationErrors() {
     document.querySelectorAll(".validation-error").forEach((el) => el.remove());
   }
+
+  function loadTranslations(callback) {
+    fetch("data/translations.json")
+      .then((response) => response.json())
+      .then((data) => {
+        callback(data);
+      })
+      .catch((error) =>
+        console.error("Error al cargar el archivo de traducciones:", error)
+      );
+  }
+
+  function changeLanguage(lang) {
+    loadTranslations((translations) => {
+      const elements = document.querySelectorAll("[data-i18n]");
+      elements.forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        const keys = key.split(".");
+        let translation = translations[lang];
+
+        keys.forEach((k) => {
+          if (translation && translation[k]) {
+            translation = translation[k];
+          }
+        });
+
+        if (translation) {
+          element.innerHTML = translation;
+        }
+      });
+
+      const placeholders = document.querySelectorAll("[data-i18n-placeholder]");
+      placeholders.forEach((element) => {
+        const key = element.getAttribute("data-i18n-placeholder");
+        const keys = key.split(".");
+        let translation = translations[lang];
+
+        keys.forEach((k) => {
+          if (translation && translation[k]) {
+            translation = translation[k];
+          }
+        });
+
+        if (translation) {
+          element.setAttribute("placeholder", translation);
+        }
+      });
+    });
+  }
+
+  //const defaultLanguage = "es";
+
+  document
+    .getElementById("changeLangEn")
+    .addEventListener("click", function () {
+      changeLanguage("en");
+      console.log("Cambiando a ingles");
+    });
+
+  document
+    .getElementById("changeLangEs")
+    .addEventListener("click", function () {
+      changeLanguage("es");
+      console.log("Cambiando a español");
+    });
+
+  //changeLanguage(defaultLanguage);
 });

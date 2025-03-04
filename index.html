@@ -50,40 +50,62 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#hero"
+                <a
+                  data-i18n="header.home"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#hero"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about"
+                <a
+                  data-i18n="header.about"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#about"
                   >Acerca de mí</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#project"
+                <a
+                  data-i18n="header.projects"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#project"
                   >Proyectos</a
                 >
               </li>
-
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact"
+                <a
+                  data-i18n="header.contact"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#contact"
                   >Contacto</a
                 >
+              </li>
+              <li class="nav-item">
+                <button class="btn-" id="changeLangEs">ES</button>
+                <button class="btn-" id="changeLangEn">EN</button>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
+
     <!--------- Header --------->
     <!--------- Hero ----------->
     <div class="container my-5" id="hero">
       <div class="row">
         <div class="col-md-6 m-auto">
           <div class="hero-content">
-            <h5>¡Bienvenido!</h5>
-            <h1>¡Hola! Soy <b>Kevin Toro,</b> un Desarrollador Junior</h1>
-            <p>
+            <h5 data-i18n="hero.welcomeText">¡Bienvenido!</h5>
+            <h1 data-i18n="hero.greet">
+              ¡Hola! Soy <b>Kevin Toro,</b> un Desarrollador Junior
+            </h1>
+            <p data-i18n="hero.greetDescription">
               Apasionado por la tecnología y la resolución de problemas, me
               especializo en desarrollo backend con la habilidad de convertir
               ideas en soluciones eficientes y bien estructuradas. Con una base
@@ -92,7 +114,7 @@
               impacto.
             </p>
             <div class="skill pt-5">
-              <h3>Competencias clave en:</h3>
+              <h3 data-i18n="hero.skills">Competencias clave en:</h3>
               <div class="row g-5">
                 <div class="col-1">
                   <div class="skill-img">
@@ -130,17 +152,17 @@
     <section class="about my-5" id="about">
       <div class="container">
         <div class="col-md-4">
-          <h4>Acerca de mí</h4>
+          <h4 data-i18n="about.aboutTitle">Acerca de mí</h4>
         </div>
         <div class="col-md-8">
-          <p>
+          <p data-i18n="about.aboutDescriptionP1">
             Cuando no estoy programando, disfruto mantenerme activo en el
             gimnasio, nadar y explorar mi amor por la música, ya sea tocando la
             guitarra, cantando o asistiendo a festivales de música electrónica.
             También valoro pasar tiempo de calidad con mi pareja y mi familia,
             quienes me motivan.
           </p>
-          <p>
+          <p data-i18n="about.aboutDescriptionP2">
             En cuanto a lo técnico, me especializo en desarrollo backend,
             trabajando con Java, Spring Boot, Python y bases de datos MySQL.
             Enfrento los proyectos con una mentalidad orientada a la resolución
@@ -153,25 +175,27 @@
             <div class="col-md-3">
               <div class="count">
                 <h2>1.5+</h2>
-                <p>Años de expereicnia en desarrollo</p>
+                <p data-i18n="about.exp">Años de expereicnia en desarrollo</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="count">
                 <h2>38%</h2>
-                <p>Pregrado completo</p>
+                <p data-i18n="about.bachelor">Pregrado completo</p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="count">
                 <h2>3+</h2>
-                <p>Años de experiencia en liderazgo</p>
+                <p data-i18n="about.leadership">
+                  Años de experiencia en liderazgo
+                </p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="count">
-                <h2>C1</h2>
-                <p>Nivel de inglés.</p>
+                <h2 data-i18n="about.langLevel">C1</h2>
+                <p data-i18n="about.langDescription">Nivel de inglés.</p>
               </div>
             </div>
           </div>
@@ -184,21 +208,25 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h4>Proyectos</h4>
+            <h4 data-i18n="projects.projectsTitle">Proyectos</h4>
           </div>
           <div class="col-12">
             <div class="project-card mb-5">
               <div class="row">
                 <div class="col-md-6">
-                  <h5>Proyecto 1: E-commerce El Zafiro Azul</h5>
-                  <p>
+                  <h5 data-i18n="projects.project1Title">
+                    Proyecto 1: E-commerce El Zafiro Azul
+                  </h5>
+                  <p data-i18n="projects.project1Description">
                     Una plataforma de comercio electrónico completamente
                     funcional donde los usuarios pueden navegar, agregar
                     productos al carrito y realizar compras. Enfocada en la
                     optimización del backend para una búsqueda rápida de
                     productos y un proceso de pago seguro.
                   </p>
-                  <h6>Tecnologías usadas:</h6>
+                  <h6 data-i18n="projects.project1TechUsed">
+                    Tecnologías usadas:
+                  </h6>
                   <ul>
                     <li>Java</li>
                     <li>Spring Boot</li>
@@ -214,19 +242,25 @@
                     href="https://github.com/Torito9609/Proyecto_Final_G3.git"
                     class="btn mt-3"
                     target="_blank"
-                    >Ver repo Front End</a
+                    data-i18n="projects.project1Button1"
                   >
+                    Ver repo Front End
+                  </a>
                   <a
                     href="https://github.com/Torito9609/back-end-zafiroAzul.git"
                     class="btn mt-3"
                     target="_blank"
-                    >Ver repo Back End</a
+                    data-i18n="projects.project1Button2"
                   >
+                    Ver repo Back End
+                  </a>
 
                   <!-- Additional details section below the buttons -->
                   <div class="additional-details mt-4">
-                    <h6>Detalles adicionales:</h6>
-                    <p>
+                    <h6 data-i18n="projects.project1AddDetailsTitle">
+                      Detalles adicionales:
+                    </h6>
+                    <p data-i18n="projects.project1AddDetailsDescription">
                       El sitio web de comercio electrónico utiliza Spring Boot
                       para el backend, lo que permite un desarrollo rápido e
                       inyección de dependencias. Usé Hibernate y JPA para el
@@ -284,14 +318,17 @@
 
     <section id="descargar-cv" class="download-cv my-5">
       <div class="container">
-        <h2>Descargar mi Hoja de Vida</h2>
-        <p>Puedes descargar mi hoja de vida en el idioma que prefieras</p>
+        <h2 data-i18n="contact.cvTitle">Descargar mi Hoja de Vida</h2>
+        <p data-i18n="contact.cvDescription">
+          Puedes descargar mi hoja de vida en el idioma que prefieras
+        </p>
         <div class="row">
           <div class="col-md-2">
             <a
               href="/cv/CV_Kevin_Toro_dev_spanish.pdf"
               class="btn mt-3"
               download="CV_Espanol.pdf"
+              data-i18n="contact.cvButton1"
               >Descargar en Español</a
             >
           </div>
@@ -300,6 +337,7 @@
               href="/cv/CV_Kevin_Toro_dev_english.pdf"
               class="btn mt-3"
               download="CV_Ingles.pdf"
+              data-i18n="contact.cvButton2"
               >Descargar en Inglés</a
             >
           </div>
@@ -311,7 +349,7 @@
     <section class="contact my-5" id="contact">
       <div class="container">
         <div class="col-md-4">
-          <h4>Contáctame</h4>
+          <h4 data-i18n="contact.contactFormTitle">Contáctame</h4>
         </div>
         <div class="col-md-8">
           <form
@@ -321,39 +359,60 @@
             novalidate
           >
             <div class="mb-3">
-              <label for="name" class="form-label">Nombre</label>
+              <label data-i18n="contact.nameField" for="name" class="form-label"
+                >Nombre</label
+              >
               <input
                 type="text"
                 class="form-control"
                 id="name"
+                data-i18n-placeholder="contact.namePlaceHolder"
                 name="name"
                 placeholder="Tu nombre"
                 required
               />
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Correo</label>
+              <label
+                data-i18n="contact.emailField"
+                for="email"
+                class="form-label"
+                >Correo</label
+              >
               <input
                 type="email"
                 class="form-control"
                 id="email"
+                data-i18n-placeholder="contact.emailPlaceHolder"
                 name="email"
                 placeholder="tu-correo@ejemplo.com"
                 required
               />
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Mensaje</label>
+              <label
+                data-i18n="contact.messageField"
+                for="message"
+                class="form-label"
+                >Mensaje</label
+              >
               <textarea
                 class="form-control"
                 id="message"
+                data-i18n-placeholder="contact.messagePlaceHolder"
                 name="message"
                 rows="3"
                 placeholder="Escribe tu mensaje aquí"
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button
+              data-i18n="contact.sendBtn"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Enviar
+            </button>
           </form>
           <div id="successMessage" class="success-message">
             ¡Tu mensaje se envió exitosamente!

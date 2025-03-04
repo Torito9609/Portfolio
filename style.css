@@ -38,16 +38,43 @@ body {
 
 .navbar-brand {
   color: var(--red-munsell);
-  font-size: 24px;
+  font-size: 32px;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.navbar-brand:hover {
+  background-color: var(--red-munsell);
+  color: var(--white);
 }
 
 .nav-link {
   color: var(--red-munsell) !important;
-  font-size: 15px !important;
+  font-size: 16px !important;
   text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 7px;
+}
+
+.nav-link:hover {
+  background-color: var(--red-munsell);
+  color: var(--white) !important;
+}
+
+.btn- {
+  position: relative;
+  top: 7px;
+  color: var(--red-munsell);
+  background-color: var(--eerie-black);
+  border-radius: 5px;
+  border: var(--red-munsell);
   font-weight: 500;
 }
 
+.btn-:hover {
+  color: var(--white);
+  background-color: var(--red-munsell);
+}
 .offcanvas {
   background-color: var(--eerie-black) !important;
 }
@@ -244,6 +271,7 @@ a.btn:hover {
 
 .contact .btn-primary {
   background-color: var(--red-munsell);
+  color: var(--white);
   border: none;
 }
 
@@ -328,5 +356,14 @@ textarea:-webkit-autofill::first-line {
   .cv-buttons {
     flex-direction: column;
     gap: 10px;
+  }
+  .language-switcher {
+    display: flex;
+  }
+}
+
+@media (max-width: 769px) {
+  .language-switcher {
+    display: none;
   }
 }
