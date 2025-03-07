@@ -8,7 +8,7 @@
     },
     "hero": {
       "welcomeText": "Welcome!",
-      "greet": "Hi! I'm <b>Kevin Toro</b>, a Junior Developer.",
+      "greet": "Hi! I'm <b>Kevin Toro</b>, a Java Developer.",
       "greetDescription": "Passionate about technology and problem-solving, I specialize in backend development with the ability to turn ideas into efficient and well-structured solutions. With a strong foundation in programming and a detail-oriented approach, I am always ready to tackle challenges and create impactful technological solutions.",
       "skills": "Best skill on:"
     },
@@ -27,10 +27,14 @@
       "project1Title": "Project 1: E commerce Zafiro Azul",
       "project1Description": "A fully functional e-commerce platform where users can browse, add products to their cart, and make purchases. Focused on backend optimization for fast product searches and a secure checkout process.",
       "project1TechUsed": "Technologies:",
-      "project1Button1": "See front end",
-      "project1Button2": "See backend",
+      "project1Button1": "View front end",
+      "project1Button2": "View backend",
       "project1AddDetailsTitle": "Aditional details",
-      "project1AddDetailsDescription": "The e-commerce website uses Spring Boot for the backend, enabling rapid development and dependency injection. I used Hibernate and JPA for ORM, allowing smooth interaction with the MySQL database. JWT is used for secure user authentication. The front-end is built with HTML, CSS, and JavaScript, ensuring a responsive and user-friendly interface."
+      "project1AddDetailsDescription": "The e-commerce website uses Spring Boot for the backend, enabling rapid development and dependency injection. I used Hibernate and JPA for ORM, allowing smooth interaction with the MySQL database. JWT is used for secure user authentication. The front-end is built with HTML, CSS, and JavaScript, ensuring a responsive and user-friendly interface.",
+      "project2Title": "Project 2: Notes Application",
+      "project2Description": "This is a full-stack application designed to manage notes in an intuitive and efficient manner. It allows users to create, edit, archive, assign categories, and filter their notes, making organization and access to information quick and easy.",
+      "project2AddDetailsDescription": "Additionally, a Bash script was implemented to automate the deployment of both the backend and frontend with a single command in Linux/macOS environments, and a data initializer was added to the backend to create default categories at startup, ensuring an immediate user experience and facilitating testing and maintenance.",
+      "project2Button1": "View Repo"
     },
     "contact": {
       "cvTitle": "Download my resume",
@@ -62,7 +66,7 @@
     },
     "hero": {
       "welcomeText": "¡Bienvenido!",
-      "greet": "¡Hola! Soy <b>Kevin Toro</b>, un Desarrollador Junior.",
+      "greet": "¡Hola! Soy <b>Kevin Toro</b>, un Desarrollador Java.",
       "greetDescription": "Apasionado por la tecnología y la resolución de problemas, me especializo en desarrollo backend con la habilidad de convertir ideas en soluciones eficientes y bien estructuradas. Con una base sólida en programación y un enfoque detallista, siempre estoy dispuesto a enfrentar desafíos y crear soluciones tecnológicas de impacto.",
       "skills": "Competencias clave en:"
     },
@@ -84,7 +88,11 @@
       "project1Button1": "Ver front-end",
       "project1Button2": "Ver back-end",
       "project1AddDetailsTitle": "Detalles adicionales",
-      "project1AddDetailsDescription": "El sitio web de comercio electrónico utiliza Spring Boot para el backend, lo que permite un desarrollo rápido e inyección de dependencias. Usé Hibernate y JPA para el ORM, lo que permite una interacción fluida con la base de datos MySQL. Se utiliza JWT para una autenticación segura de usuarios. El front-end está construido con HTML, CSS y JavaScript, asegurando una interfaz receptiva y fácil de usar."
+      "project1AddDetailsDescription": "El sitio web de comercio electrónico utiliza Spring Boot para el backend, lo que permite un desarrollo rápido e inyección de dependencias. Usé Hibernate y JPA para el ORM, lo que permite una interacción fluida con la base de datos MySQL. Se utiliza JWT para una autenticación segura de usuarios. El front-end está construido con HTML, CSS y JavaScript, asegurando una interfaz receptiva y fácil de usar.",
+      "project2Title": "Proyecto 2: Aplicación de notas",
+      "project2Description": "Esta es una aplicación full-stack diseñada para gestionar notas de forma intuitiva y eficiente. Permite a los usuarios crear, editar, archivar, asignar categorías y filtrar sus notas, facilitando la organización y el acceso a la información de manera rápida.",
+      "project2AddDetailsDescription": "Además, se implementó un script Bash que automatiza el despliegue de backend y frontend con un solo comando en entornos Linux/macOS, y se añadió un inicializador de datos en el backend que crea categorías por defecto al arrancar, garantizando una experiencia de usuario inmediata y facilitando las pruebas y el mantenimiento del proyecto.",
+      "project2Button1": "Ver Repo"
     },
     "contact": {
       "cvTitle": "Descarga mi CV",

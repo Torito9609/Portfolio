@@ -228,6 +228,14 @@ body {
   margin-bottom: 20px;
 }
 
+.tech-list {
+  -webkit-column-count: 2; /* Para Chrome, Safari y Opera */
+  -moz-column-count: 2; /* Para Firefox */
+  column-count: 2;
+  padding-left: 1rem;
+  list-style-position: inside;
+}
+
 .project-ss img {
   width: 100%;
   height: auto;
