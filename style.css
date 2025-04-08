@@ -229,8 +229,8 @@ body {
 }
 
 .tech-list {
-  -webkit-column-count: 2; /* Para Chrome, Safari y Opera */
-  -moz-column-count: 2; /* Para Firefox */
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
   column-count: 2;
   padding-left: 1rem;
   list-style-position: inside;

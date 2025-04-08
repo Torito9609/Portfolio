@@ -222,144 +222,171 @@
             <h4 data-i18n="projects.projectsTitle">Proyectos</h4>
           </div>
           <div class="col-12">
-            <div class="project-card mb-5">
-              <div class="row">
-                <div class="col-md-6">
-                  <h5 data-i18n="projects.project1Title">
-                    Proyecto 1: E-commerce El Zafiro Azul
-                  </h5>
-                  <p data-i18n="projects.project1Description">
-                    Una plataforma de comercio electrónico completamente
-                    funcional donde los usuarios pueden navegar, agregar
-                    productos al carrito y realizar compras. Enfocada en la
-                    optimización del backend para una búsqueda rápida de
-                    productos y un proceso de pago seguro.
-                  </p>
-                  <h6 data-i18n="projects.project1TechUsed">
-                    Tecnologías usadas:
-                  </h6>
-                  <ul class="tech-list">
-                    <li>Java JDK17</li>
-                    <li>Spring Boot</li>
-                    <li>JPA</li>
-                    <li>Hibernate</li>
-                    <li>JWT</li>
-                    <li>MySQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                  </ul>
-                  <a
-                    href="https://github.com/Torito9609/Proyecto_Final_G3.git"
-                    class="btn mt-3"
-                    target="_blank"
-                    data-i18n="projects.project1Button1"
-                  >
-                    Ver repo Front End
-                  </a>
-                  <a
-                    href="https://github.com/Torito9609/back-end-zafiroAzul.git"
-                    class="btn mt-3"
-                    target="_blank"
-                    data-i18n="projects.project1Button2"
-                  >
-                    Ver repo Back End
-                  </a>
+            <div
+              id="projectsCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Proyecto 1 -->
+                <div class="carousel-item active">
+                  <div class="project-card">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 data-i18n="projects.project1Title">
+                          Proyecto 1: E-commerce El Zafiro Azul
+                        </h5>
+                        <p data-i18n="projects.project1Description">
+                          Una plataforma de comercio electrónico completamente
+                          funcional...
+                        </p>
+                        <h6 data-i18n="projects.project1TechUsed">
+                          Tecnologías usadas:
+                        </h6>
+                        <ul class="tech-list">
+                          <li>Java JDK17</li>
+                          <li>Spring Boot</li>
+                          <li>JPA</li>
+                          <li>Hibernate</li>
+                          <li>JWT</li>
+                          <li>MySQL</li>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                        </ul>
+                        <a
+                          href="https://github.com/Torito9609/Proyecto_Final_G3.git"
+                          class="btn mt-3"
+                          target="_blank"
+                          data-i18n="projects.project1Button1"
+                        >
+                          Ver repo Front End
+                        </a>
+                        <a
+                          href="https://github.com/Torito9609/back-end-zafiroAzul.git"
+                          class="btn mt-3"
+                          target="_blank"
+                          data-i18n="projects.project1Button2"
+                        >
+                          Ver repo Back End
+                        </a>
+                        <div class="additional-details mt-4">
+                          <h6 data-i18n="projects.project1AddDetailsTitle">
+                            Detalles adicionales:
+                          </h6>
+                          <p data-i18n="projects.project1AddDetailsDescription">
+                            El sitio web de comercio electrónico utiliza Spring
+                            Boot para el backend...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="project-ss mb-3">
+                          <img src="img/SS1.png" alt="E-commerce Screenshot" />
+                        </div>
+                        <div class="project-ss mb-3">
+                          <img src="img/SS5.png" alt="E-commerce Screenshot" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                  <!-- Additional details section below the buttons -->
-                  <div class="additional-details mt-4">
-                    <h6 data-i18n="projects.project1AddDetailsTitle">
-                      Detalles adicionales:
-                    </h6>
-                    <p data-i18n="projects.project1AddDetailsDescription">
-                      El sitio web de comercio electrónico utiliza Spring Boot
-                      para el backend, lo que permite un desarrollo rápido e
-                      inyección de dependencias. Usé Hibernate y JPA para el
-                      ORM, lo que permite una interacción fluida con la base de
-                      datos MySQL. Se utiliza JWT para una autenticación segura
-                      de usuarios. El front-end está construido con HTML, CSS y
-                      JavaScript, asegurando una interfaz receptiva y fácil de
-                      usar.
-                    </p>
+                <!-- Proyecto 2 -->
+                <div class="carousel-item">
+                  <div class="project-card">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 data-i18n="projects.project2Title">
+                          Proyecto 2: Aplicación de notas
+                        </h5>
+                        <p data-i18n="projects.project2Description">
+                          Una aplicación de notas moderna y funcional...
+                        </p>
+                        <h6 data-i18n="projects.project1TechUsed">
+                          Tecnologías usadas:
+                        </h6>
+                        <ul class="tech-list">
+                          <li>Java JDK21</li>
+                          <li>Spring Boot</li>
+                          <li>JPA</li>
+                          <li>Hibernate</li>
+                          <li>MySQL</li>
+                          <li>HTML</li>
+                          <li>Bootstrap</li>
+                          <li>React</li>
+                        </ul>
+                        <a
+                          href="https://github.com/Torito9609/Notes-App.git"
+                          class="btn mt-3"
+                          target="_blank"
+                          data-i18n="projects.project2Button1"
+                        >
+                          Ver repo
+                        </a>
+                        <div class="additional-details mt-4">
+                          <h6 data-i18n="projects.project1AddDetailsTitle">
+                            Detalles adicionales:
+                          </h6>
+                          <p data-i18n="projects.project2AddDetailsDescription">
+                            Se implementó un script Bash que automatiza el
+                            despliegue...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="project-ss mb-2">
+                          <img
+                            src="img/SS1notes.png"
+                            alt="Notes App Screenshot"
+                          />
+                        </div>
+                        <div class="project-ss mb-2">
+                          <img
+                            src="img/SS2notes.png"
+                            alt="Notes App Screenshot"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="project-ss mb-3">
-                    <img src="img/SS1.png" alt="E-commerce Screenshot" />
-                  </div>
-                  <div class="project-ss mb-3">
-                    <img src="img/SS5.png" alt="E-commerce Screenshot" />
-                  </div>
-                </div>
+
+                <!-- Puedes duplicar el bloque .carousel-item para más proyectos -->
               </div>
-            </div>
-            <div class="project-card mb-5">
-              <div class="row">
-                <div class="col-md-6">
-                  <h5 data-i18n="projects.project2Title">
-                    Proyecto 2: Aplicación de notas
-                  </h5>
-                  <p data-i18n="projects.project2Description">
-                    Una plataforma de comercio electrónico completamente
-                    funcional donde los usuarios pueden navegar, agregar
-                    productos al carrito y realizar compras. Enfocada en la
-                    optimización del backend para una búsqueda rápida de
-                    productos y un proceso de pago seguro.
-                  </p>
-                  <h6 data-i18n="projects.project1TechUsed">
-                    Tecnologías usadas:
-                  </h6>
-                  <ul class="tech-list">
-                    <li>Java JDK21</li>
-                    <li>Spring Boot</li>
-                    <li>JPA</li>
-                    <li>Hibernate</li>
-                    <li>MySQL</li>
-                    <li>HTML</li>
-                    <li>Bootstrap</li>
-                    <li>React</li>
-                  </ul>
 
-                  <a
-                    href="https://github.com/Torito9609/Notes-App.git"
-                    class="btn mt-3"
-                    target="_blank"
-                    data-i18n="projects.project2Button1"
-                  >
-                    Ver repo
-                  </a>
-
-                  <!-- Additional details section below the buttons -->
-                  <div class="additional-details mt-4">
-                    <h6 data-i18n="projects.project1AddDetailsTitle">
-                      Detalles adicionales:
-                    </h6>
-                    <p data-i18n="projects.project2AddDetailsDescription">
-                      Además, se implementó un script Bash que automatiza el
-                      despliegue de backend y frontend con un solo comando en
-                      entornos Linux/macOS, y se añadió un inicializador de
-                      datos en el backend que crea categorías por defecto al
-                      arrancar, garantizando una experiencia de usuario
-                      inmediata y facilitando las pruebas y el mantenimiento del
-                      proyecto.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="project-ss mb-2">
-                    <img src="img/SS1notes.png" alt="E-commerce Screenshot" />
-                  </div>
-                  <div class="project-ss mb-2">
-                    <img src="img/SS2notes.png" alt="E-commerce Screenshot" />
-                  </div>
-                </div>
-              </div>
+              <!-- Controles de carrusel -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#projectsCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#projectsCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!--------- Projects Section --------->
+
     <!-- Social Media Section -->
     <div class="social-media">
       <a
