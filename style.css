@@ -257,6 +257,12 @@ a.btn:hover {
   background-color: var(--orange-web);
   color: var(--white);
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(99%) saturate(749%)
+    hue-rotate(342deg) brightness(91%) contrast(100%);
+}
 /*----- Projects -----*/
 
 /*----- Contact -----*/
